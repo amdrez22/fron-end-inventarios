@@ -53,10 +53,6 @@ export default function TipoEquipos() {
       listTipoEquipos()
     }catch(e){
       const {status, data} = e.response;
-      /*if(status == 400){
-        console.log(data.msg)
-        
-      }*/
       setErrorSend({status: true, msg: data.msg})
       console.log(e)
       setLoading(false)
